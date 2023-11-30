@@ -116,7 +116,7 @@ img {
   margin-bottom: 0.25rem;
 }
 
-.section__subtitle{
+.section__subtitle {
   display: block;
   font-size: var(--small-font-size);
   color: var(--text-color-light);
@@ -267,7 +267,7 @@ img {
   transition: color 0.3s;
 }
 
-.home__social-link:hover  {
+.home__social-link:hover {
   color: var(--title-color);
 }
 
@@ -316,4 +316,33 @@ img {
 .skills__title i {
   font-size: 1rem;
   font-weight: initial;
+}
+
+.skills__info,
+.skills__data,
+.skills__blop {
+  display: grid;
+}
+
+.skills__info{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem;
+}
+
+.skills__data {
+  justify-content: center;
+  text-align: center;
+}
+
+.skills__blop{
+  width: 80px;
+  height: 100px;
+  background-color: var(--cotainer-color);
+  border-radius: 3rem;
+  place-items: center;
+  margin-bottom: 1rem;
+}
+
+.skills__blop img{
+  width: 40px;
 }
