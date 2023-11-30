@@ -38,16 +38,13 @@
 @media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 3rem;
-    --body-font: "Roboto", sans-serif;
-    --tittle-font: "Lora", serif;
-    --biggest-font-size: 1.5rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
-    --tiny-font-size: 625rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+    --tiny-font-size: 0.688rem;
   }
 }
 
@@ -100,12 +97,17 @@ img {
 }
 
 .section {
-  padding: block 2.5rem;
+  padding-block: 2.5rem;
 }
 
 .section__border {
   border-bottom: 1px solid var(--title-color);
   padding-bottom: 3.5rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
 }
 
 .section__title {
@@ -114,8 +116,7 @@ img {
   margin-bottom: 0.25rem;
 }
 
-.section__subtitle {
-  text-align: center;
+.section__subtitle{
   display: block;
   font-size: var(--small-font-size);
   color: var(--text-color-light);
@@ -162,7 +163,7 @@ img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .nav__menu {
     position: fixed;
     width: 88%;
@@ -190,7 +191,7 @@ img {
   align-items: center;
   row-gap: 0.25rem;
   font-size: var(--smaller-font-size);
-  color: var(--text-color);
+  color: var(--text-color-light);
   transition: color 0.3s;
 }
 
@@ -206,7 +207,7 @@ img {
   position: absolute;
   right: 1.5rem;
   bottom: 0.7rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -215,7 +216,7 @@ img {
 }
 
 .home__container {
-  row-gap: 3rem;
+  row-gap: 4rem;
   padding-top: 2rem;
 }
 .home__data {
@@ -266,17 +267,17 @@ img {
   transition: color 0.3s;
 }
 
-.home__social-link:hover P {
+.home__social-link:hover  {
   color: var(--title-color);
 }
 
 .home__info {
   display: grid;
-  row-gap: 2rem;
+  row-gap: 0.5rem;
 }
 
 .home__info-title {
-  font-family: var(--font-semi-bold);
+  font-family: var(--body-font);
   font-size: var(--smaller-font-size);
   font-weight: 400;
   color: var(--text-color-light);
@@ -298,4 +299,21 @@ img {
   font-weight: var(--font-semi-bold);
 }
 
+.skills__container {
+  row-gap: 3.5rem;
+}
 
+.skills__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 2.5rem;
+}
+
+.skills__title i {
+  font-size: 1rem;
+  font-weight: initial;
+}
