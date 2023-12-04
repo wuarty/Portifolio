@@ -25,7 +25,7 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
-  --tiny-font-size: 625rem;
+  --tiny-font-size: 0.625rem;
 
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -98,6 +98,7 @@ img {
 
 .section {
   padding-block: 2.5rem;
+  text-align: center;
 }
 
 .section__border {
@@ -324,7 +325,7 @@ img {
   display: grid;
 }
 
-.skills__info{
+.skills__info {
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem 2rem;
 }
@@ -334,7 +335,7 @@ img {
   text-align: center;
 }
 
-.skills__blop{
+.skills__blop {
   width: 80px;
   height: 100px;
   background-color: var(--cotainer-color);
@@ -343,6 +344,39 @@ img {
   margin-bottom: 1rem;
 }
 
-.skills__blop img{
+.skills__blop img {
   width: 40px;
 }
+
+.skills__names {
+  font-size: var(--small-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.skills__subtitle {
+  font-size: var(--tiny-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__blop:hover img {
+  animation: bounce-skills 6s;
+}
+
+@keyframes bounce-skills {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translate(0);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translate(0);
+  }
+}
+
