@@ -13,6 +13,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
     <title>Portifolio</title>
   </head>
 
@@ -212,10 +213,13 @@
     <section class="projects section" id="projects">
       <h2 class="section__title">Projects</h2>
       <span class="section__subtitle">Most recent works</span>
+
       <div class="container section__border">
-        <div class="projects__container">
-          <div>
-            <div class="projects__contents">
+        <div class="projects__container swiper">
+
+          <div class="swiper-wrapper">
+
+            <div class="projects__content swiper-slide">
               <img
                 src="/assets/img/download.jpg"
                 alt="projects image"
@@ -229,11 +233,31 @@
                 </a>
               </div>
             </div>
+            <div class="projects__content swiper-slide">
+              <img
+                src="/assets/img/download.jpg"
+                alt="projects image"
+                class="projects__img"
+              />
+              <div>
+                <span class="projects__subtitles">Test 2</span>
+                <h1 class="projects__title">project 2</h1>
+                <a href="#" class="projects__button">
+                  View Demo <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
+
+        
       </div>
     </section>
 
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
   </body>
 </html>
